@@ -47,7 +47,7 @@ public class AppActivity extends AppCompatActivity {
                 startActivity(choice);
 //                Toast.makeText(AppActivity.this, "Your order have been received successfully ...We were inform you .. ", Toast.LENGTH_SHORT).show();
 
-
+//
             }
         });
 
