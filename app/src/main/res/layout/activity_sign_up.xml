@@ -101,9 +101,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/colorTextIcons"
+            android:textColor="@color/colorAccent"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="25sp"
             android:text="Already have an account? Log in here!"
             android:id="@+id/login"
             android:layout_gravity="center_horizontal" />

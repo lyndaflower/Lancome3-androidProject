@@ -14,6 +14,7 @@
         <activity android:name=".activities.LogInActivity">
         </activity>
         <activity android:name=".activities.SignUpActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,12 +25,11 @@
         <activity android:name=".activities.AppActivity" />
         <activity android:name=".activities.PhotoActivity" />
         <activity
-            android:name=".activities.MainActivity"
-            android:theme="@style/NoActionBarTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".activities.MainActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <meta-data
