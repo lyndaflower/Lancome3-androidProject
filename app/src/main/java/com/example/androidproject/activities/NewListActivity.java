@@ -1,7 +1,9 @@
 package com.example.androidproject.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -38,6 +40,19 @@ public class NewListActivity extends AppCompatActivity {
         mProgressText = (ProgressBar) findViewById(R.id.progressBar);
         mErrorView = (TextView) findViewById(R.id.errorView);
 
-        ButterKnife.bind(this);
+
+        Intent choice = getIntent();
+        String location = choice.getStringExtra("location");
+        String type = choice.getStringExtra("type");
+
+        sharedpref = PreferenceManager.getDefaultSharedPreferences(this);
+        mAdresses = sharedpref.getString(Holder.PREFERENCES_LOCATION_KEY,null);
+
+        if (mAdresses != null) {
+            getPerfume(mAdresses);
+        }
+    }
+
+    private void getPerfume(String location) {
     }
 }

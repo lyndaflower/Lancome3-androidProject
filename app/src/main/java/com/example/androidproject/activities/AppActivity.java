@@ -18,12 +18,11 @@ import butterknife.ButterKnife;
 
 public class AppActivity extends AppCompatActivity {
 
-    private SharedPreferences sharedpref;
-    private SharedPreferences.Editor mtext;
-
     @BindView(R.id.makeChoice) Button mMakeChoice;
+    @BindView(R.id.text1) EditText mText1;
     @BindView(R.id.text2) EditText mText2;
     @BindView(R.id.text3) EditText mText3;
+    @BindView(R.id.text4) EditText mText4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,26 +31,23 @@ public class AppActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        sharedpref = PreferenceManager.getDefaultSharedPreferences(this);
-        mtext = sharedpref.edit();
-
         mMakeChoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (v == mMakeChoice) {
-                    String location = mText3.getText().toString();
-                    addToPreference(location);
-                    Intent choice = new Intent(AppActivity.this, FinalActivity.class);
-                    ;
-                    choice.putExtra("location", location);
-                    startActivity(choice);
+                String name = mText1.getText().toString();
+                String email = mText2.getText().toString();
+                String location = mText3.getText().toString();
+                String type = mText4.getText().toString();
+
+                Intent choice = new Intent(AppActivity.this, FinalActivity.class);
+//                choice.putExtra("name", name);
+//                choice.putExtra("email", email);
+                choice.putExtra("location", location);
+//                choice.putExtra("type", type);
+                startActivity(choice);
+//                Toast.makeText(AppActivity.this, "Your order have been received successfully ...We were inform you .. ", Toast.LENGTH_SHORT).show();
 
 
-                }
-            }
-
-            private void addToPreference(String location) {
-                mtext.putString(Holder.PREFERENCES_LOCATION_KEY,location).apply();
             }
         });
 

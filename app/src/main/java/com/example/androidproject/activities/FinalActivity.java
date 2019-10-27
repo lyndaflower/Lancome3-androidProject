@@ -27,7 +27,7 @@ import retrofit2.Response;
 
 public class FinalActivity extends AppCompatActivity {
 
-//    @BindView(R.id.view1) TextView mView;
+    //    @BindView(R.id.view1) TextView mView;
 //    @BindView(R.id.view2) TextView mMake;
 //    @BindView(R.id.view3) TextView mView1;
 //    @BindView(R.id.view4) TextView mMake2;
@@ -36,8 +36,8 @@ public class FinalActivity extends AppCompatActivity {
     @BindView(R.id.progressBar) ProgressBar mProgressText;
     @BindView(R.id.errorView) TextView mErrorView;
 
-private listAdapter mAdapter;
-private List<Business> mSpray;
+    private listAdapter mAdapter;
+    private List<Business> mSpray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,8 +85,8 @@ private List<Business> mSpray;
 
             @Override
             public void onFailure(Call<YelpPurabella> call, Throwable t) {
-            hideProgressBar();
-            showUnsuccessfulMessage();
+                hideProgressBar();
+                showUnsuccessfulMessage();
 
             }
             private void showUnsuccessfulMessage(){
@@ -98,7 +98,7 @@ private List<Business> mSpray;
                 mErrorView.setVisibility(View.VISIBLE);
             }
             private void showBodySpray(){
-          mRecycle.setVisibility(View.VISIBLE);
+                mRecycle.setVisibility(View.VISIBLE);
             }
 
             private void hideProgressBar(){
