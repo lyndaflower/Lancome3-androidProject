@@ -20,8 +20,8 @@ public class AdapterMyPerfumes extends ArrayAdapter {
         String category = mCategories[position];
         return String.format("%S \nfind the key : %S",bodySprays,category);
     }
-    @Override
-    public int getCount(){
-        return mSpray.length;
-    }
+//    @Override
+//    public int getCount(){
+//        return mSpray.length;
+//    }
 }
