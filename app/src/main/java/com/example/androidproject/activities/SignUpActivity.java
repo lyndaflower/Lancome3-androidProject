@@ -165,8 +165,8 @@ private boolean validName(String name) {
 }
 
 private boolean validPassword(String password , String comfirmPassword) {
-        if (password.length() <7) {
-            mPasswordText.setError("Please create a password with at least 7 characters");
+        if (password.length() <6) {
+            mPasswordText.setError("Please create a password with at least 6 characters");
             return false;
         } else if (!password.equals(comfirmPassword)) {
             mPasswordText.setError("Password do not match");
@@ -178,7 +178,7 @@ private boolean validPassword(String password , String comfirmPassword) {
     private void createAuthenticationProgressDialog() {
         mAuthenticationProgressDialog =new ProgressDialog(this);
         mAuthenticationProgressDialog.setTitle("Loading ......");
-        mAuthenticationProgressDialog.setMessage("Authentication with Firebase ...");
+        mAuthenticationProgressDialog.setMessage("Sign up to Lancome paris ...");
         mAuthenticationProgressDialog.setCancelable(false);
 
     }
