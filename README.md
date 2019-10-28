@@ -1,7 +1,6 @@
 # LANCOME PARFUME 
 ## Author
-
-![HOME](src/images/images/home.png);
+<img src= "images/home.png">
 ![HOME](src/images/signUp.png);
 ![HOME](src/images/enter.png);
 ![HOME](src/images/logout.png);
