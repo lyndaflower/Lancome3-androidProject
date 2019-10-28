@@ -5,11 +5,13 @@
 
 # DESCRIPTION
 
-This is app where you can find all kind of parfumes and you can be able to bull your favorite parfume on lancome paris platform by filling the form .
+This plattform where user first sign up if he/she has not acount and after user will be able to see more images of different kind of perfumes ,and also user can search for location to see otherc pefumes shops around the world.
 # User story
-
-* Users can click on discover,where he/she can find more parfumes 
-* After filling form you check whether your answers becomes successefully.
+* User must create account and log in .
+* User is able to logout the account .
+* Users can click on discover,where he/she can find more parfumes.
+* User is able to search for other shop.
+* User is able shop perfume.
 
 
 # PRE-REQUISITES
@@ -17,15 +19,18 @@ This is app where you can find all kind of parfumes and you can be able to bull 
 A couple of things to get you started:
 
 1.Ensure you have android studio 
+2.Ensure you have firebase
 
 # SETUP/INSTALLATION
 ANDROID
 GITUB
+FIREBASE
 
 # TECHNOLOGIES USED:
 
 * Butterknife
-
+*Fragment 
+*Parcel
 * Layout(Relative layout and linear layout )
 
 # Support & Contact
@@ -38,10 +43,6 @@ GITUB
 # License
 
 The app is licensed by MIT. Copyright (c) 2019 Lynda Flower
-
-
-
-
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
