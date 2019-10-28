@@ -155,14 +155,14 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         }
         return isAwesomeEmail;
 }
-
-private boolean validName(String name) {
-        if (name.equals("")){
-            mNameEdit.setError("Please enter your name ");
-            return false;
-        }
-        return true;
-}
+//
+//private boolean validName(String name) {
+//        if (name.equals("")){
+//            mNameEdit.setError("Please enter your name ");
+//            return false;
+//        }
+//        return true;
+//}
 
 private boolean validPassword(String password , String comfirmPassword) {
         if (password.length() <6) {
