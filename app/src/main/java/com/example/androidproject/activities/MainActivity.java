@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
-                    getSupportActionBar().setTitle("Welcome to Lancome , " + user.getDisplayName());
+                    getSupportActionBar().setTitle("Welcome, to Lancome paris " + user.getDisplayName() + "!");
                 } else {
 
                 }
