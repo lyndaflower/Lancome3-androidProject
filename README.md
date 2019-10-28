@@ -1,12 +1,15 @@
 # LANCOME PARFUME 
 ## Author
 
-![HOME](src/main/resources/public/images/Home.png);
-![HOME](src/main/resources/public/images/Successfull.png);
-![HOME](src/main/resources/public/images/result.png);
-![HOME](src/main/resources/public/images/squad.png);
-![HOME](src/main/resources/public/images/Squad-form.png);
-![HOME](src/main/resources/public/images/squad.png);
+![HOME](src/images/images/home.png);
+![HOME](src/images/signUp.png);
+![HOME](src/images/enter.png);
+![HOME](src/images/logout.png);
+![HOME](src/images/logIn.png);
+![HOME](src/images/gallery.png);
+![HOME](src/images/search.png);
+![HOME](src/images/shops.png);
+![HOME](src/images/perfume.png);
 
 *UMURERWA Lynda Flower*
 
