@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import com.example.androidproject.R;
 
@@ -18,11 +19,12 @@ import butterknife.ButterKnife;
 
 public class AppActivity extends AppCompatActivity {
 
-    @BindView(R.id.makeChoice) Button mMakeChoice;
-    @BindView(R.id.text1) EditText mText1;
-    @BindView(R.id.text2) EditText mText2;
+    @BindView(R.id.makeChoice)
+    ImageButton mMakeChoice;
+//    @BindView(R.id.text1) EditText mText1;
+//    @BindView(R.id.text2) EditText mText2;
     @BindView(R.id.text3) EditText mText3;
-    @BindView(R.id.text4) EditText mText4;
+//    @BindView(R.id.text4) EditText mText4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +36,10 @@ public class AppActivity extends AppCompatActivity {
         mMakeChoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = mText1.getText().toString();
-                String email = mText2.getText().toString();
+//                String name = mText1.getText().toString();
+//                String email = mText2.getText().toString();
                 String location = mText3.getText().toString();
-                String type = mText4.getText().toString();
+//                String type = mText4.getText().toString();
 
                 Intent choice = new Intent(AppActivity.this, FinalActivity.class);
 //                choice.putExtra("name", name);
